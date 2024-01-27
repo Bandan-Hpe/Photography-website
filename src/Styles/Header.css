@@ -1,0 +1,38 @@
+.default-header {
+    padding: 20px 0;
+    width: 100% !important;
+    background: transparent;
+    z-index:999;
+    position:fixed;
+    top:0;
+}
+
+.menu-bar {
+    cursor: pointer;
+}
+nav {
+    margin-right: 70px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    transform-origin: 100% 50%;
+}
+
+.menu-bar{
+    display:none;
+}
+
+nav a {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 25px;
+    display: inline-block;
+    text-decoration: none;
+}
+.logo{
+    width:70px;
+}
+

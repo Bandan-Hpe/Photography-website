@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+  .nav-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    left: -50%;
+    top: 0;
+    height: 100vh;
+    transition: all 0.5s linear;
+    width: 40%;
+
+  }
+  .nav-list.close {
+    left: -13px;
+    transition: all 0.5s linear;
+    width: 40%;
+
+  }
+  .nav-list a {
+    color: white;
+    margin: 1rem;
+  }
+  .menu-bar {
+    display: block !important;
+  }
+}
