@@ -1,54 +1,62 @@
-<div className="row">
-                <div className="col-lg-6">
-                    <div className="so-item">
-                        <div className="so-title">
-                            <div className="so-number">01</div>
-                            <h5>Filming and Editing</h5>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                    </div>
-                    <div className="so-item">
-                        <div className="so-title">
-                            <div className="so-number">02</div>
-                            <h5>Engagement photography</h5>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                    </div>
-                    <div className="so-item">
-                        <div className="so-title">
-                            <div className="so-number">03</div>
-                            <h5>Comercial photography</h5>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                    </div>
-                </div>
-                <div classNameName="col-lg-6">
-                    <div className="so-item">
-                        <div className="so-title">
-                            <div className="so-number">04</div>
-                            <h5>Social media photography</h5>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                    </div>
-                    <div className="so-item">
-                        <div className="so-title">
-                            <div className="so-number">02</div>
-                            <h5>Event Photography</h5>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                    </div>
-                    <div className="so-item">
-                        <div className="so-title">
-                            <div className="so-number">03</div>
-                            <h5>personal photography</h5>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                    </div>
-                </div>
+import React, { Fragment } from "react";
+import "../Styles/Portfolio.css";
+import { IoLocation } from "react-icons/io5";
+import { IoMdMail } from "react-icons/io";
+import { MdTimer } from "react-icons/md";
+
+
+
+
+const Contact = () => {
+  return (
+    <Fragment>
+      <div className="contact-section">
+        <div className="map-warp">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14376.077865872314!2d-73.879277264103!3d40.757667781624285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1546528920522"
+            allowFullScreen=""
+          ></iframe>
+        </div>
+        <div className="contact-box">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="contact-info">
+              <IoLocation />
+
+                <p>
+                  60-49 Road 11378
+                  <br />
+                  New York
+                </p>
+              </div>
             </div>
+            <div className="col-lg-4">
+              <div className="contact-info">
+              <IoMdMail />
+                <p>
+                  <span>Phone:</span> +65 11.188.888
+                </p>
+                <p>
+                  <span>Mail:</span> colorlib@gmail.com
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="contact-info">
+              <MdTimer />
+                <p>
+                  <span>Week Days:</span> 10:00 – 22:00
+                </p>
+                <p>
+                  <span>Sunday:</span> Close
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Fragment>
+  );
+};
+
+export default Contact;
