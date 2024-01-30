@@ -72,14 +72,14 @@ const Home = () => {
         <section className="About-area section-gap" id="about">
           <div className="container">
             <div className="row d-flex align-items-center">
-              <div className="col-lg-6 about-left">
+              <div className="col-lg-6 about-left d-flex justify-content-center">
                 <img
                   className="img-fluid"
                   src="assets/images/about-img.jpg"
                   alt=""
                 />
               </div>
-              <div className="col-lg-6 about-right">
+              <div className="col-lg-6 about-right mt-5">
                 <h1>
                   We Believe that <br />
                   Interior beautifies the
@@ -129,7 +129,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="testmonials section-gap">
+        <section className="testmonials section-gap container">
           <div className="testmonial-top">
             <h1 className="text-center">Testmonials</h1>
             <p className="text-center">

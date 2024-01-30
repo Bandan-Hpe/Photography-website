@@ -1,10 +1,10 @@
 import React, { Fragment, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../Styles/Header.css";
 import { FaBars } from "react-icons/fa";
 
 const Header = () => {
-  const [mobile, setMobile] = useState(false);
+  const [mobile, setMobile] = useState(true);
 
   const toggleMenu = () => {
     setMobile(!mobile);
@@ -16,28 +16,28 @@ const Header = () => {
           <div className="header-wrap">
             <div className="header-top d-flex justify-content-around align-items-center ">
               <div className="logo">
-                <Link to="/">
+                <NavLink to="/">
                   <img
                     src="assets/images/logo.png"
                     alt="logo"
                     className="logo"
                   />
-                </Link>
+                </NavLink>
               </div>
               <div className="main-menubar d-flex align-items-center">
                 <nav className={`nav-list  ${mobile ? "" : "close"}`}>
-                  <Link to="/" onClick={toggleMenu}>
+                  <NavLink to="/" onClick={toggleMenu}>
                     Home
-                  </Link>
-                  <Link to="/about" onClick={toggleMenu}>
+                  </NavLink>
+                  <NavLink to="/about" onClick={toggleMenu}>
                     About Me
-                  </Link>
-                  <Link to="/gallery" onClick={toggleMenu}>
+                  </NavLink>
+                  <NavLink to="/gallery" onClick={toggleMenu}>
                     Gallery
-                  </Link>
-                  <Link to="/contact" onClick={toggleMenu}>
+                  </NavLink>
+                  <NavLink to="/contact" onClick={toggleMenu}>
                     Contact
-                  </Link>
+                  </NavLink>
                 </nav>
                 <div className="menu-bar" onClick={toggleMenu}>
                   <FaBars />

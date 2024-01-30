@@ -1,10 +1,10 @@
 .default-header {
-    padding: 20px 0;
     width: 100% !important;
     background: transparent;
     z-index:999;
     position:fixed;
     top:0;
+    background-color: black;
 }
 
 .menu-bar {
@@ -22,11 +22,13 @@ nav {
 .menu-bar{
     display:none;
 }
+.active{
+    color:goldenrod;
+}
 
 nav a {
-    color: #000;
+    color: white;
     font-size: 15px;
-    font-weight: 500;
     text-transform: uppercase;
     margin: 0 25px;
     display: inline-block;
