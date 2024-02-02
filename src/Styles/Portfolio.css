@@ -43,3 +43,14 @@
 .contact-info span{
     font-weight:bold
 }
+.tabs div div {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.MuiTabs-indicator{
+    display:none !important;
+}
+.Mui-selected{
+    color:goldenrod !important;
+}
