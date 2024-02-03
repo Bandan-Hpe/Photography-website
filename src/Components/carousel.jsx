@@ -15,22 +15,22 @@ import "swiper/css/navigation";
 
 const photos = [
   {
-    src: "https://themewagon.github.io/alimie/img/bg-img/15.jpg",
+    src: "/assets/images/Wedding_Photography/w_4.jpg",
   },
   {
-    src: "https://themewagon.github.io/alimie/img/bg-img/16.jpg",
+    src: "/assets/images/Birthday_Photoshoot/bday2.jpg",
   },
   {
-    src: "https://themewagon.github.io/alimie/img/bg-img/11.jpg",
+    src: "/assets/images/Couple_Photography/couple5.jpg",
   },
   {
-    src: "https://themewagon.github.io/alimie/img/bg-img/12.jpg",
+    src: "/assets/images/Pre_wedding-Shoot/pre-w4.jpg",
   },
   {
-    src: "https://themewagon.github.io/alimie/img/bg-img/13.jpg",
+    src: "/assets/images/Pre_wedding-Shoot/pre-w3.jpg",
   },
   {
-    src: "https://themewagon.github.io/alimie/img/bg-img/14.jpg",
+    src: "/assets/images/Couple_Photography/couple4.jpg",
   },
 ];
 
