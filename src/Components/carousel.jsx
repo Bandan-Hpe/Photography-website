@@ -1,4 +1,4 @@
-import React,{Fragment} from "react";
+import React, { Fragment } from "react";
 
 import {
   Navigation,
@@ -26,9 +26,7 @@ const photos = [
   {
     src: "/assets/images/Pre_wedding-Shoot/pre-w4.jpg",
   },
-  {
-    src: "/assets/images/Pre_wedding-Shoot/pre-w3.jpg",
-  },
+
   {
     src: "/assets/images/Couple_Photography/couple4.jpg",
   },
@@ -63,7 +61,6 @@ const Carousel = () => {
             delay: 1000,
           }}
           speed={2000}
-          
         >
           {photos.map((photos, index) => {
             return (

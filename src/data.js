@@ -105,14 +105,14 @@ export const images = [
 
   },
   {
-    src: "/assets/images/Birthday_Photoshoot/bday4.JPG",
-    original: "/assets/images/Birthday_Photoshoot/bday4.JPG",
+    src: "/assets/images/Birthday_Photoshoot/bday4.jpg",
+    original: "/assets/images/Birthday_Photoshoot/bday4.jpg",
     width: 320,
     height: 213,
   },
   {
-    src: "/assets/images/Birthday_Photoshoot/bday5.JPG",
-    original: "/assets/images/Birthday_Photoshoot/bday5.JPG",
+    src: "/assets/images/Birthday_Photoshoot/bday5.jpg",
+    original: "/assets/images/Birthday_Photoshoot/bday5.jpg",
     width: 320,
     height: 213,
   },
@@ -233,14 +233,14 @@ export const bday=[
 
   },
   {
-    src: "/assets/images/Birthday_Photoshoot/bday4.JPG",
-    original: "/assets/images/Birthday_Photoshoot/bday4.JPG",
+    src: "/assets/images/Birthday_Photoshoot/bday4.jpg",
+    original: "/assets/images/Birthday_Photoshoot/bday4.jpg",
     width: 320,
     height: 213,
   },
   {
-    src: "/assets/images/Birthday_Photoshoot/bday5.JPG",
-    original: "/assets/images/Birthday_Photoshoot/bday5.JPG",
+    src: "/assets/images/Birthday_Photoshoot/bday5.jpg",
+    original: "/assets/images/Birthday_Photoshoot/bday5.jpg",
     width: 320,
     height: 213,
   },

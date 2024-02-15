@@ -97,8 +97,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="footer-bottom w-100 d-flex justify-content-center">
-            <p className="mb-0 text-center"> &#169; 2024 All Rights Reserved |  Developed by : <Link to="https://therealtechnologies.com/">The Real Technologies</Link></p>
+          <div className="footer-bottom w-100 d-md-flex justify-content-center">
+            <p className="mb-0 text-center"> &#169; 2024 All Rights Reserved |  Developed by : <Link to="https://therealtechnologies.com/">The Real Technologies ❤ </Link></p>
      
          
           </div>
