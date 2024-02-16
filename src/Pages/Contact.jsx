@@ -4,9 +4,6 @@ import { IoLocation } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
 import { MdTimer } from "react-icons/md";
 
-
-
-
 const Contact = () => {
   return (
     <Fragment>
@@ -18,23 +15,34 @@ const Contact = () => {
           ></iframe>
         </div>
         <div className="contact-box">
+          <div>
+            <h1>Let's create magic together!</h1>
+            <p className="m-4">
+              Got a question or ready to book your session? Reach out to us
+              today! Located in the heart of Kakinada, our studio is where
+              dreams come to life through the lens. Whether you're planning your
+              big day or want to capture a special milestone, we're here to make
+              it unforgettable. Drop by our studio or give us a call at
+              8121119996. 
+            </p>
+          </div>
           <div className="row">
             <div className="col-lg-4">
               <div className="contact-info">
-              <IoLocation />
+                <IoLocation />
 
                 <p>
-                  60-49 Road 11378
+                Kakinada
                   <br />
-                  New York
+                  Andhra Pradesh
                 </p>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="contact-info">
-              <IoMdMail />
+                <IoMdMail />
                 <p>
-                  <span>Phone:</span> +65 11.188.888
+                  <span>Phone:</span>+91-8121119996
                 </p>
                 <p>
                   <span>Mail:</span> colorlib@gmail.com
@@ -43,7 +51,7 @@ const Contact = () => {
             </div>
             <div className="col-lg-4">
               <div className="contact-info">
-              <MdTimer />
+                <MdTimer />
                 <p>
                   <span>Week Days:</span> 10:00 – 22:00
                 </p>

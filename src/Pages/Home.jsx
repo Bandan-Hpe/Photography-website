@@ -48,7 +48,7 @@ const Home = () => {
   return (
     <Fragment>
       <section className="home-section">
-        <div className="hero-section positon-relative">
+        <div className="hero-section position-relative">
           <video
             autoPlay
             muted
@@ -63,10 +63,13 @@ const Home = () => {
             <source src="/assets/images/video_1.mp4" type="video/mp4" />
           </video>
 
-          {/* <div className="">
-            <h1>Your Text Here</h1>
-            <p>Additional text or components can go here</p>
-          </div> */}
+          <div className="position-absolute top-50 my-auto text-center mx-5">
+            <h3 className="text-white  fw-bold rounded lh-base video-text">
+              "Every moment is a masterpiece waiting to be captured. <br/> Let us
+              frame your memories with love and artistry.<br/> Book your session
+              today and treasure the magic forever."
+            </h3>
+          </div>
         </div>
 
         <section className="About-area section-gap" id="about">
@@ -85,13 +88,15 @@ const Home = () => {
                   Interior beautifies the
                 </h1>
                 <p>
-                  inappropriate behavior is often laughed off as “boys will be
-                  boys,” women face higher conduct standards especially in the
-                  workplace. That’s why it’s crucial that, as women, our
-                  behavior on the job is beyond reproach. inappropriate behavior
-                  is often laughed off as “boys will be boys,” women face higher
-                  conduct standards especially in the workplace. That’s why it’s
-                  crucial that.
+                  Welcome to Your Memories, where we craft timeless moments that
+                  last a lifetime. Capturing the essence of every occasion since
+                  2020, our team led by Ramakrishna has delighted over 200
+                  clients with our passion for photography. From intimate couple
+                  sessions to grand wedding affairs, exquisite birthday
+                  celebrations to adorable baby shoots, we specialize in
+                  preserving your most cherished memories. Book your session
+                  today and let us weave magic through our lenses. Call us
+                  now at 8121119996.
                 </p>
                 <button className="submit-btn primary-btn mt-20 text-uppercase ">
                   Hire me now<span className="lnr lnr-arrow-right"></span>
@@ -105,11 +110,15 @@ const Home = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-8 pb-30 header-text">
-                <h1 className="text-white text-center">My Recent Photos</h1>
-                <p className="text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut <br /> labore et dolore magna
-                  aliqua.
+                <h1 className="text-black text-center">My Recent Photos</h1>
+                <p className="text-center text-black">
+                  Step into our captivating gallery and witness the artistry
+                  behind Your Memories. Each frame tells a unique story, a
+                  snapshot of joy, love, and celebration. From enchanting
+                  pre-wedding shoots to heartwarming baby portraits, our
+                  portfolio showcases the diverse tapestry of life's beautiful
+                  moments. Immerse yourself in our world of creativity and let
+                  our photographs speak volumes.
                 </p>
               </div>
             </div>

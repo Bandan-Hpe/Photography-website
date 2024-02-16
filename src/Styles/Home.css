@@ -41,46 +41,51 @@
 
 /* ------------------------testmonial start------------- */
 .testmonial-items {
-    background-color: #000;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    height:300px;
-  }
-  .testmonial-header {
-    padding: 0.3rem 0rem !important;
-  }
-  
-  .testmonial-img {
-    width: 70px;
-    height: 70px;
-    border-radius:50%
-  }
-  .test-monial-title .name {
-    color: white;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .test-monial-title .email {
-    color: white;
-    font-size: 15px;
-  }
-  .testmonials .slick-slide div {
-    margin: 0rem 1rem;
-  }
-  .mb-0 {
-    margin-bottom: 10px !important;
-  }
-  .testmonial-content {
-    margin: 1rem 0rem;
-  }
-  blockquote {
-    color: white;
-    font-size: 15px;
-    text-align: justify;
-  }
-  .swiper-horizontal{
-    height:350px;
+  background-color: #000;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  height: 300px;
+}
+.testmonial-header {
+  padding: 0.3rem 0rem !important;
+}
+
+.testmonial-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.test-monial-title .name {
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.test-monial-title .email {
+  color: white;
+  font-size: 15px;
+}
+.testmonials .slick-slide div {
+  margin: 0rem 1rem;
+}
+.mb-0 {
+  margin-bottom: 10px !important;
+}
+.testmonial-content {
+  margin: 1rem 0rem;
+}
+blockquote {
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+}
+.swiper-horizontal {
+  height: 350px;
+}
+.video-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
