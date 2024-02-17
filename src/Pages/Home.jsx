@@ -5,6 +5,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Rating from "@mui/material/Rating";
+import { useNavigate } from "react-router";
 
 // Import Swiper styles
 import "swiper/css";
@@ -23,6 +24,7 @@ const slides = images.map(({ original, width, height }) => ({
 }));
 
 const Home = () => {
+  const navigate=useNavigate()
   const [index, setIndex] = useState(-1);
 
   const handleClick = (index, item) => setIndex(index);
@@ -53,6 +55,7 @@ const Home = () => {
             autoPlay
             muted
             loop
+            playsInline
             style={{
               width: "100%",
               height: "100vh",
@@ -63,12 +66,12 @@ const Home = () => {
             <source src="/assets/images/video_1.mp4" type="video/mp4" />
           </video>
 
-          <div className="position-absolute top-50 my-auto text-center mx-5">
+          <div className="position-absolute top-0  text-center video-bg">
             <h3 className="text-white  fw-bold rounded lh-base video-text">
-              "Every moment is a masterpiece waiting to be captured. <br/> Let us
-              frame your memories with love and artistry.<br/> Book your session
-              today and treasure the magic forever."
+              "Every moment is a masterpiece waiting to be captured. <br /> Let
+              us frame your memories with love and artistry."
             </h3>
+            <button className="submit-btn primary-btn mt-20 text-uppercase" onClick={()=>navigate('/contact') }>Contact us</button>
           </div>
         </div>
 
@@ -84,8 +87,10 @@ const Home = () => {
               </div>
               <div className="col-lg-6 about-right mt-5">
                 <h1>
-                  We Believe that <br />
-                  Interior beautifies the
+                  Capture Your Memories with <br />
+                  Timeless Photography 
+                  <br />
+                  Experiences
                 </h1>
                 <p>
                   Welcome to Your Memories, where we craft timeless moments that
@@ -95,10 +100,9 @@ const Home = () => {
                   sessions to grand wedding affairs, exquisite birthday
                   celebrations to adorable baby shoots, we specialize in
                   preserving your most cherished memories. Book your session
-                  today and let us weave magic through our lenses. Call us
-                  now at 8121119996.
+                  today and let us weave magic through our lenses. 
                 </p>
-                <button className="submit-btn primary-btn mt-20 text-uppercase ">
+                <button className="submit-btn primary-btn mt-20 text-uppercase " onClick={()=>navigate('/contact')}>
                   Hire me now<span className="lnr lnr-arrow-right"></span>
                 </button>
               </div>
@@ -110,15 +114,11 @@ const Home = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-8 pb-30 header-text">
-                <h1 className="text-black text-center">My Recent Photos</h1>
+                <h1 className="text-black text-center">
+                  Explore Our Portfolio
+                </h1>
                 <p className="text-center text-black">
-                  Step into our captivating gallery and witness the artistry
-                  behind Your Memories. Each frame tells a unique story, a
-                  snapshot of joy, love, and celebration. From enchanting
-                  pre-wedding shoots to heartwarming baby portraits, our
-                  portfolio showcases the diverse tapestry of life's beautiful
-                  moments. Immerse yourself in our world of creativity and let
-                  our photographs speak volumes.
+                  A Visual Journey of Your Memories
                 </p>
               </div>
             </div>
@@ -140,12 +140,8 @@ const Home = () => {
 
         <section className="testmonials section-gap container">
           <div className="testmonial-top">
-            <h1 className="text-center">Testmonials</h1>
-            <p className="text-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-              laborum architecto reprehenderit accusantium laboriosam temporibus
-              voluptas aut quis sapiente alias.
-            </p>
+            <h1 className="text-center">Words From Our Clients</h1>
+            <p className="text-center">Testimonials That Speak Volumes</p>
           </div>
           <Swiper
             slidesPerView={3}
@@ -158,22 +154,20 @@ const Home = () => {
             modules={[Pagination, Navigation]}
             className="mySwiper"
           >
+            
             <SwiperSlide>
               <div className="testmonial-items ">
                 <div className="testmonial-content">
                   <blockquote>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Dolores voluptatibus ratione labore eaque fuga dolorem neque
-                    est iusto hic, ut eius nihil, exercitationem repellat ipsa
-                    magni officiis natus. Veniam vitae quaerat dolore accusamus
-                    dignissimos obcaecati sed quidem eius qui? Quidem.
+                    "Absolutely stunning couple photoshoot! The photographer
+                    captured our love in every frame.
                   </blockquote>
                   <Rating name="read-only" value={5} readOnly />
                 </div>
 
                 <div className="testmonial-header   ">
                   <div className="test-monial-title">
-                    <p className="name mb-0 text-end">- Bandan Pradhan</p>
+                    <p className="name mb-0 text-end">- Aarav Sharma</p>
                   </div>
                 </div>
               </div>
@@ -182,18 +176,15 @@ const Home = () => {
               <div className="testmonial-items ">
                 <div className="testmonial-content">
                   <blockquote>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Dolores voluptatibus ratione labore eaque fuga dolorem neque
-                    est iusto hic, ut eius nihil, exercitationem repellat ipsa
-                    magni officiis natus. Veniam vitae quaerat dolore accusamus
-                    dignissimos obcaecati sed quidem eius qui? Quidem.
+                    "Incredible birthday photoshoot experience! The photos truly
+                    captured the joy of the celebration.
                   </blockquote>
                   <Rating name="read-only" value={5} readOnly />
                 </div>
 
                 <div className="testmonial-header   ">
                   <div className="test-monial-title">
-                    <p className="name mb-0 text-end">- Bandan Pradhan</p>
+                    <p className="name mb-0 text-end">- Neha Patel</p>
                   </div>
                 </div>
               </div>
@@ -202,18 +193,15 @@ const Home = () => {
               <div className="testmonial-items ">
                 <div className="testmonial-content">
                   <blockquote>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Dolores voluptatibus ratione labore eaque fuga dolorem neque
-                    est iusto hic, ut eius nihil, exercitationem repellat ipsa
-                    magni officiis natus. Veniam vitae quaerat dolore accusamus
-                    dignissimos obcaecati sed quidem eius qui? Quidem.
+                    "Our wedding photos are breathtaking! Every moment was
+                    beautifully documented."
                   </blockquote>
                   <Rating name="read-only" value={5} readOnly />
                 </div>
 
                 <div className="testmonial-header   ">
                   <div className="test-monial-title">
-                    <p className="name mb-0 text-end">- Bandan Pradhan</p>
+                    <p className="name mb-0 text-end">- Rajesh Singh</p>
                   </div>
                 </div>
               </div>
@@ -222,18 +210,15 @@ const Home = () => {
               <div className="testmonial-items ">
                 <div className="testmonial-content">
                   <blockquote>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Dolores voluptatibus ratione labore eaque fuga dolorem neque
-                    est iusto hic, ut eius nihil, exercitationem repellat ipsa
-                    magni officiis natus. Veniam vitae quaerat dolore accusamus
-                    dignissimos obcaecati sed quidem eius qui? Quidem.
+                    "The pre-wedding photoshoot exceeded our expectations. It
+                    felt like a fairytale come true."
                   </blockquote>
                   <Rating name="read-only" value={5} readOnly />
                 </div>
 
                 <div className="testmonial-header   ">
                   <div className="test-monial-title">
-                    <p className="name mb-0 text-end">- Bandan Pradhan</p>
+                    <p className="name mb-0 text-end"> - Priya Desai</p>
                   </div>
                 </div>
               </div>
@@ -242,18 +227,49 @@ const Home = () => {
               <div className="testmonial-items ">
                 <div className="testmonial-content">
                   <blockquote>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Dolores voluptatibus ratione labore eaque fuga dolorem neque
-                    est iusto hic, ut eius nihil, exercitationem repellat ipsa
-                    magni officiis natus. Veniam vitae quaerat dolore accusamus
-                    dignissimos obcaecati sed quidem eius qui? Quidem.
+                    "Fantastic engagement photos! They perfectly captured the
+                    essence of our relationship."
                   </blockquote>
                   <Rating name="read-only" value={5} readOnly />
                 </div>
 
                 <div className="testmonial-header   ">
                   <div className="test-monial-title">
-                    <p className="name mb-0 text-end"> - Bandan Pradhan</p>
+                    <p className="name mb-0 text-end"> - Arjun Reddy</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="testmonial-items ">
+                <div className="testmonial-content">
+                  <blockquote>
+                    "Professional and creative commercial photography. Our
+                    products have never looked better."
+                  </blockquote>
+                  <Rating name="read-only" value={5} readOnly />
+                </div>
+
+                <div className="testmonial-header   ">
+                  <div className="test-monial-title">
+                    <p className="name mb-0 text-end"> - Aisha Khan</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="testmonial-items ">
+                <div className="testmonial-content">
+                  <blockquote>
+                    "Social media photography that wowed our followers! Engaging
+                    and visually captivating."
+                  </blockquote>
+                  <Rating name="read-only" value={5} readOnly />
+                </div>
+
+                <div className="testmonial-header   ">
+                  <div className="test-monial-title">
+                    <p className="name mb-0 text-end"> - Siddharth Malhotra</p>
                   </div>
                 </div>
               </div>

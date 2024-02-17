@@ -2,6 +2,8 @@ import React, { Fragment, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../Styles/Header.css";
 import { FaBars } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
+
 
 const Header = () => {
   const [mobile, setMobile] = useState(true);
@@ -30,7 +32,7 @@ const Header = () => {
                     Home
                   </NavLink>
                   <NavLink to="/about" onClick={toggleMenu}>
-                    About Me
+                    About Us
                   </NavLink>
                   <NavLink to="/gallery" onClick={toggleMenu}>
                     Gallery
@@ -40,7 +42,7 @@ const Header = () => {
                   </NavLink>
                 </nav>
                 <div className="menu-bar" onClick={toggleMenu}>
-                  <FaBars />
+                  {mobile ?<FaBars />:<IoMdClose/> }
                 </div>
               </div>
             </div>

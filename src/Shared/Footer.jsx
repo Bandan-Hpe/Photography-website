@@ -1,10 +1,7 @@
 import React, { Fragment } from "react";
 import "../Styles/Footer.css";
 
-
-import { BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
-import { FaMapMarkerAlt, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { FaMedium } from "react-icons/fa6";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 import { BiLogoGmail, BiSolidPhoneCall } from "react-icons/bi";
 import { Link } from "react-router-dom";
@@ -22,9 +19,9 @@ const Footer = () => {
                 className="footer-logo"
               />
               <p className="footer-para">
-             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, dicta.
+                Welcome to Your Memories, where we craft timeless moments that
+                last a lifetime.
               </p>
-              
             </div>
             <div className="col-md-9 col-sm-12 d-md-flex flex-wrap justify-content-between mt-sm-2">
               <div className="col-md-4 col-sm-6">
@@ -37,12 +34,11 @@ const Footer = () => {
                     <Link to="/about">
                       <li>About me</li>
                     </Link>
-                   
+
                     <Link to="/portfolio">
                       <li>Gallery</li>
                     </Link>
 
-            
                     <Link to="/contact">
                       <li> Contact </li>
                     </Link>
@@ -54,7 +50,7 @@ const Footer = () => {
                 <div className="footer-title d-flex flex-column">
                   <h4>Social media</h4>
                   <ul className="footer-list flex-column p-0 mb-0">
-                    <Link to="#">
+                    <Link to="https://www.instagram.com/yourmemories.in/ ">
                       <li>Instagram </li>
                     </Link>
                     <Link to="#">
@@ -66,7 +62,6 @@ const Footer = () => {
                     <Link to="#">
                       <li>Twitter</li>
                     </Link>
-                  
                   </ul>
                 </div>
               </div>
@@ -77,20 +72,14 @@ const Footer = () => {
                   <ul className="footer-list flex-column p-0 mb-0 location">
                     <li className=" d-flex align-items-start gap-2">
                       <FaMapMarkerAlt className="location-icons" />
-                      <span>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nesciunt!  
-                 
-                      </span>
+                      <span>Kakinada, Andhra Pradesh</span>
                     </li>
                     <li className=" d-flex align-items-center gap-2">
-                      <BiSolidPhoneCall /> <span> +91-123456789</span>
+                      <BiSolidPhoneCall /> <span> +91-8121119996</span>
                     </li>
                     <li className=" d-flex align-items-first gap-2 ">
                       <BiLogoGmail className="mt-1" />
-                      <span>
-                        support@gmail.com 
-                 
-                      </span>
+                      <span>support@gmail.com</span>
                     </li>
                   </ul>
                 </div>
@@ -98,9 +87,13 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-bottom w-100 d-md-flex justify-content-center">
-            <p className="mb-0 text-center"> &#169; 2024 All Rights Reserved |  Developed by : <Link to="https://therealtechnologies.com/">The Real Technologies ❤ </Link></p>
-     
-         
+            <p className="mb-0 text-center">
+              {" "}
+              &#169; 2024 All Rights Reserved | Developed by :{" "}
+              <Link to="https://therealtechnologies.com/">
+                The Real Technologies ❤{" "}
+              </Link>
+            </p>
           </div>
         </div>
       </footer>

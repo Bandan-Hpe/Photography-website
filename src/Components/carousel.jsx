@@ -30,6 +30,7 @@ const photos = [
   {
     src: "/assets/images/Couple_Photography/couple4.jpg",
   },
+
 ];
 
 const Carousel = () => {

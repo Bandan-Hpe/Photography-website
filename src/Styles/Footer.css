@@ -8,12 +8,11 @@ footer {
     margin: 0rem 0rem 2rem 0rem;
   }
   .footer-title h4 {
-    font-family: white;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    color: white;
+    color: goldenrod;
   }
   a{
     text-decoration: none !important;

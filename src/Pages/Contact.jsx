@@ -22,8 +22,7 @@ const Contact = () => {
               today! Located in the heart of Kakinada, our studio is where
               dreams come to life through the lens. Whether you're planning your
               big day or want to capture a special milestone, we're here to make
-              it unforgettable. Drop by our studio or give us a call at
-              8121119996. 
+              it unforgettable. Drop by our studio or give us a call .
             </p>
           </div>
           <div className="row">
@@ -55,9 +54,7 @@ const Contact = () => {
                 <p>
                   <span>Week Days:</span> 10:00 – 22:00
                 </p>
-                <p>
-                  <span>Sunday:</span> Close
-                </p>
+               
               </div>
             </div>
           </div>

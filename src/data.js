@@ -113,8 +113,45 @@ export const images = [
   {
     src: "/assets/images/Birthday_Photoshoot/bday5.jpg",
     original: "/assets/images/Birthday_Photoshoot/bday5.jpg",
-    width: 320,
+    width:320,
     height: 213,
+  },
+
+  {
+    src: "/assets/images/model/model3.jpg",
+    original: "/assets/images/model/model3.jpg",
+    width: 313,
+    height: 313,
+  },
+  {
+    src: "/assets/images/model/model4.jpg",
+    original: "/assets/images/model/model4.jpg",
+    width: 313,
+    height: 313,
+  },
+  {
+    src: "/assets/images/model/model5.jpg",
+    original: "/assets/images/model/model5.jpg",
+    width: 313,
+    height: 313,
+  },
+  {
+    src: "/assets/images/model/model6.jpg",
+    original: "/assets/images/model/model6.jpg",
+    width: 313,
+    height: 313,
+  },
+  {
+    src: "/assets/images/model/model7.jpg",
+    original: "/assets/images/model/model7.jpg",
+    width: 313,
+    height: 313,
+  },
+  {
+    src: "/assets/images/model/model8.jpg",
+    original: "/assets/images/model/model8.jpg",
+    width: 313,
+    height: 313,
   },
   
 ];
@@ -245,4 +282,56 @@ export const bday=[
     height: 213,
   },
   
+]
+
+export const model=[
+  {
+    src: "/assets/images/model/model1.jpg",
+    original: "/assets/images/model/model1.jpg",
+    width: 520,
+    height: 513,
+  },
+  {
+    src: "/assets/images/model/model2.jpg",
+    original: "/assets/images/model/model2.jpg",
+    width: 520,
+    height: 513,
+  },
+  {
+    src: "/assets/images/model/model3.jpg",
+    original: "/assets/images/model/model3.jpg",
+    width: 520,
+    height: 513,
+  },
+  {
+    src: "/assets/images/model/model4.jpg",
+    original: "/assets/images/model/model4.jpg",
+    width: 520,
+    height: 513,
+  },
+  {
+    src: "/assets/images/model/model5.jpg",
+    original: "/assets/images/model/model5.jpg",
+    width: 520,
+    height: 513,
+  },
+  {
+    src: "/assets/images/model/model6.jpg",
+    original: "/assets/images/model/model6.jpg",
+    width: 520,
+    height: 513,
+  },
+  {
+    src: "/assets/images/model/model7.jpg",
+    original: "/assets/images/model/model7.jpg",
+    width: 520,
+    height: 513,
+  },
+  {
+    src: "/assets/images/model/model8.jpg",
+    original: "/assets/images/model/model8.jpg",
+    width: 520,
+    height: 513,
+  },
+ 
 ]
